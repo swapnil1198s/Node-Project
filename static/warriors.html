@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Warriors</title>
+  </head>
+  <body>
+    <div style="background-color: beige;">
+        <h1 style="color: purple;">Here you can add players to your team or search existing players!</h1>
+        <hr>
+        <form action="/addPlayer" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="Enter Name"><br>
+            <label for="sport">Sport:</label><br>
+            <input type="text" id="sport" name="sport" value="Basketball" readonly><br>
+            <label for="effeciency">Effeciency(0-100):</label><br>
+            <input type="number" id="effeciency" name="effeciency" value="0" min="0" max="100"><br>
+            <label for="team">Team:</label><br>
+            <input type="text" id="team" name="team" value="Warriors" readonly><br>
+            <input type="submit">
+        </form> 
+    </div>
+    
+    <div style="background-color: beige;">
+        <h1 style="color: purple;">You can search for any player across your teams</h1>
+        <hr>
+        <form action="/searchPlayer">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="Enter Name"><br>
+            <label for="sport">Sport:</label><br>
+            <input type="text" id="sport" name="sport" value="Enter Sport"><br>
+            <label for="team">Team:</label><br>
+            <input type="text" id="team" name="team" value="Warriors" readonly><br>
+            <input type="submit">
+        </form>
+    </div>
+    
+  </body>
+</html>

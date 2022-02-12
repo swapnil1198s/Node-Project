@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Coach</title>
+  </head>
+  <body>
+    <div style="background-color: beige;">
+    <h1 style="color: purple;">Welcome coach!</h1>
+    <hr>
+    <h3 style="color: royalblue;">Please select your team</h3>
+      <form id="selectTeams" action="teamSelected" method="post">
+        <select data-style="btn-info" name="team">
+            <optgroup label="Select">
+                <option name="warriors" value="warriors">Warriors</option>
+                <option name="bulls" value="bulls">Bulls</option>
+                <option name="wind" value="wind">Wind</option>
+                <option name="lightning" value="lightning">Lightning</option>
+            </optgroup>
+        </select>
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
